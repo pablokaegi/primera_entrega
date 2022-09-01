@@ -2,6 +2,9 @@
 /*Inicio de Formulario*/
 alert("Los destinos disponibles por el momento son: Bariloche, Cataratas y Catamarca - ¡Con tu código promocional hasta 50%  de descuento HotSale!");
     let lugar = prompt('Ingrese el destino al que desea viajar');
+    if (lugar !="Bariloche" && lugar != "Cataratas" && lugar != "Catamarca"){
+        alert("Destino inválido")
+    }
     let pasajeros= prompt('Ingrese la cantidad de pasajeros');
 alert ("Confirma que desea añadir en su carrito el viaje seleccionado");
     let nombre = prompt ("Ingrese su nombre y apellido");
