@@ -1,8 +1,8 @@
 
 /*Inicio de Formulario*/
 alert("Los destinos disponibles por el momento son: Bariloche, Cataratas y Catamarca - ¡Con tu código promocional hasta 50%  de descuento HotSale!");
-    let lugar = prompt('Ingrese el destino al que desea viajar');
-    if (lugar !="Bariloche" && lugar != "Cataratas" && lugar != "Catamarca"){
+    let lugar = prompt('Ingrese el destino al que desea viajar').toLowerCase ();
+    if (lugar !="bariloche" && lugar != "cataratas" && lugar != "catamarca"){
         alert("Destino inválido")
     }
     let pasajeros= prompt('Ingrese la cantidad de pasajeros');
@@ -22,7 +22,7 @@ let total;
 let descuento= 123;
 
 /*Procesamos la compra con o sin descuento*/
-if (lugar=="Bariloche"){
+if (lugar=="bariloche"){
     costo= bariloche * numeroDePasajeros;
     alert ("Hola " + nombre +" su costo de viaje es:"+ costo);
         let codigoDedescuento= prompt("Ingrese un código de descuento");
@@ -31,7 +31,7 @@ if (lugar=="Bariloche"){
         total=costo / 2;
         alert ("su costo con descuento es "+ total)
         } else alert("Código inválido"); 
-}else if (lugar=="Cataratas"){
+}else if (lugar=="cataratas"){
     costo = cataratas*numeroDePasajeros;
     alert ("Hola " + nombre +" su costo de viaje es:"+ costo)
         let codigoDedescuento= prompt("Ingrese un código de descuento");
@@ -40,7 +40,7 @@ if (lugar=="Bariloche"){
         total=costo / 2;
         alert ("su costo con descuento es "+ total)
         } else alert("Código inválido");
-}else if (lugar== "Catamarca"){
+}else if (lugar== "catamarca"){
     costo= catamarca*numeroDePasajeros;
     alert ("Hola "+ nombre +" su costo de viaje es:"+ costo)
         let codigoDedescuento= prompt("Ingrese un código de descuento");
